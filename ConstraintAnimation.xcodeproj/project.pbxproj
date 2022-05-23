@@ -16,6 +16,7 @@
 		CE4B51D2283B24EE00A2F158 /* ConstraintAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4B51D1283B24EE00A2F158 /* ConstraintAnimationTests.swift */; };
 		CE4B51DC283B24EE00A2F158 /* ConstraintAnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4B51DB283B24EE00A2F158 /* ConstraintAnimationUITests.swift */; };
 		CE4B51DE283B24EE00A2F158 /* ConstraintAnimationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4B51DD283B24EE00A2F158 /* ConstraintAnimationUITestsLaunchTests.swift */; };
+		CE4B51EC283B251700A2F158 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = CE4B51EB283B251700A2F158 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE4B51EC283B251700A2F158 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +145,9 @@
 			dependencies = (
 			);
 			name = ConstraintAnimation;
+			packageProductDependencies = (
+				CE4B51EB283B251700A2F158 /* SnapKit */,
+			);
 			productName = ConstraintAnimation;
 			productReference = CE4B51B7283B24E500A2F158 /* ConstraintAnimation.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = CE4B51AE283B24E500A2F158;
+			packageReferences = (
+				CE4B51EA283B251700A2F158 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = CE4B51B8283B24E500A2F158 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -602,6 +610,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CE4B51EA283B251700A2F158 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE4B51EB283B251700A2F158 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE4B51EA283B251700A2F158 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CE4B51AF283B24E500A2F158 /* Project object */;
 }
